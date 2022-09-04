@@ -15,6 +15,11 @@ const router = createRouter({
             component: () => import("../views/RubricView.vue"),
         },
         {
+            path: "/theme",
+            name: "theme",
+            component: () => import("../views/ThemeView.vue"),
+        },
+        {
             path: "/news",
             name: "news",
             // route level code-splitting

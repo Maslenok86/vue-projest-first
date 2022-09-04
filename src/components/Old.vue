@@ -1,5 +1,6 @@
 <template>
   <div class="news-old">
+    <div class="news-recommended-title">Возможно вы пропустили</div>
     <div class="news-old-element">
       <img class="news-old-element-img"
            src="https://resizer.mail.ru/p/5515df55-eca7-5b47-8f99-516bb0cb9aed/AQAOo_3C365kwMcL55KAnbI7AaxMohodKiLFtSIB_h3yzMQnURDP5WU75cjhdTKM6rRd6Uy2_pWSxPfmVqp3Z7H5BuE.webp">
@@ -53,7 +54,8 @@
 
 <script>
 export default {
-  name: "Old"
+  name: "Old",
+  props: {title: String}
 }
 </script>
 
@@ -64,15 +66,19 @@ export default {
   background-color: white;
   height: auto;
   width: 984px;
+  border: 1px solid lightgrey;
 }
 
 .news-old-element {
   display: flex;
-  border: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
   padding: 20px 20px 20px 20px;
   align-items: center;
 }
-
+.news-recommended-title {
+  font: 22pt Gabriola bold;
+  padding: 20px;
+}
 .news-old-element-img {
   height: auto;
   width: 300px;

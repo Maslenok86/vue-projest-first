@@ -1,11 +1,13 @@
-<script setup>
-import Fresh from "../components/Fresh.vue";
-import Old from "../components/Old.vue";
+<script>
 import Recommended from "../components/Recommended.vue";
+import Old from "../components/Old.vue";
+export default {
+  name: "ThemeView",
+  components: {Old, Recommended}
+}
 </script>
 
 <template>
-  <Fresh/>
   <div class="news-old-and-recommended">
     <Old/>
     <div class="news-recommended-block">
